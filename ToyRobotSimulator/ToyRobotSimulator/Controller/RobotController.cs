@@ -25,7 +25,7 @@ namespace ToyRobotSimulator.Controller
                     turnRobotCCW(robot);
                     break;
                 case "RIGHT":
-                    turnRobotCCW(robot);
+                    turnRobotCW(robot);
                     break;
                 case "REPORT":
                     UserIO.showMessage(robot.ToString());
@@ -89,6 +89,20 @@ namespace ToyRobotSimulator.Controller
                     robot.directionFacing = Robot.Direction.NORTH;
                     break;
             }
+        }
+
+        public void reverseMove(Robot robot)
+        {
+            robot._currentHeightPosition = robot._previousHeightPosition;
+            robot._currentLengthPosition = robot._previousLengthPosition;
+            robot.directionFacing = robot.previousDirectionFacing;
+        }
+
+        public void setPreviousLocationAsNewLocation(Robot robot)
+        {
+            robot._previousHeightPosition = robot._currentHeightPosition;
+            robot._previousLengthPosition = robot._currentLengthPosition;
+            robot.previousDirectionFacing = robot.directionFacing;
         }
 
         public bool isRobotOnABoard(Robot robot)

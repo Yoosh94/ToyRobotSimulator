@@ -9,15 +9,20 @@ namespace ToyRobotSimulator.Model
     class Robot
     {
         public enum Direction { NORTH,EAST,SOUTH,WEST}
-        public bool _isRobotPlaced { get; set; }
-        public int _currentHeightPosition { get; set; }
-        public int _currentLengthPosition { get; set; }
+        public bool _isRobotPlaced;
+        public int _currentHeightPosition;
+        public int _currentLengthPosition;
+        public int _previousHeightPosition;
+        public int _previousLengthPosition;
         public Direction directionFacing;
+        public Direction previousDirectionFacing;
         public Robot()
         {
             //Empty constructor
             
         }
+
+        
 
         public override string ToString()
         {

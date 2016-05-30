@@ -12,17 +12,21 @@ namespace ToyRobotSimulator
     {
         static void Main(string[] args)
         {
+            Robot robot = new Robot();
+            robot._currentHeightPosition = 0;
+            robot._currentLengthPosition = 0;
+            robot.directionFacing = Robot.Direction.NORTH;
+            robot._isRobotPlaced = true;
+            RobotController rController = new RobotController();
+            BoardErrorChecker boardChecker = new BoardErrorChecker();
+            Console.WriteLine("Toy Robot Simulator");
             Console.WriteLine("Enter board height: ");
             int boardHeight = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter board length: ");
             int boardLength = Convert.ToInt32(Console.ReadLine());
-            Board board = new Board(boardLength, boardHeight);
-
+            Board board = new Board(boardLength, boardHeight,robot);
+            board._isRobotPlaced = true;
             string userInput = "";
-            Console.WriteLine("Toy Robot Simulator");
-            Robot robot = new Robot();
-            RobotController rController = new RobotController();
-            BoardErrorChecker boardChecker = new BoardErrorChecker();
             while(userInput != "End")
             {
                 userInput = Console.ReadLine();
@@ -32,7 +36,17 @@ namespace ToyRobotSimulator
                     //check if the robot has been placed on the baord already
                     if (boardChecker.isRobotPresentOnBoard(board) && rController.isRobotOnABoard(robot))
                     {
+                        //Move the robot                  
                         rController.assignMove(robot,userInput);
+                        //If the robot is not in a valid position move it back. If it is in a valid position update the previous position.
+                        if (!boardChecker.checkRobot(board))
+                        {
+                            rController.reverseMove(robot);
+                        }
+                        else
+                        {
+                            rController.setPreviousLocationAsNewLocation(robot);
+                        }
                     }
                     
                 }

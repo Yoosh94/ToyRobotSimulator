@@ -8,15 +8,17 @@ namespace ToyRobotSimulator.Model
 {
     class Board
     {
-        private int _height { get; set; }
-        private int _length { get; set; }
+        public int _height { get; set; }
+        public int _length { get; set; }
         public bool _isRobotPlaced { get; set; }
+        public Robot _robot;
 
-        public Board(int length, int height)
+        public Board(int length, int height,Robot robot)
         {
             _height = height;
             _length = length;
             _isRobotPlaced = false;
+            _robot = robot;
         }
     }
 }

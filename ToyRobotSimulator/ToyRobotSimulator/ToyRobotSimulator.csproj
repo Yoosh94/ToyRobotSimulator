@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\BoardErrorChecker.cs" />
     <Compile Include="Controller\RobotController.cs" />
     <Compile Include="Controller\UserIO.cs" />
     <Compile Include="Model\Board.cs" />
