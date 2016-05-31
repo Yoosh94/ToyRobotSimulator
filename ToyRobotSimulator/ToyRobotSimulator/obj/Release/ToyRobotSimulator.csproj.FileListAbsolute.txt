@@ -1,0 +1,5 @@
+C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\bin\Release\ToyRobotSimulator.exe.config
+C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\bin\Release\ToyRobotSimulator.exe
+C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\bin\Release\ToyRobotSimulator.pdb
+C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\obj\Release\ToyRobotSimulator.exe
+C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\obj\Release\ToyRobotSimulator.pdb
