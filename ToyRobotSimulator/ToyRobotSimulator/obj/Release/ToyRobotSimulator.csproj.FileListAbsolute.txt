@@ -3,3 +3,4 @@ C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\bin\
 C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\bin\Release\ToyRobotSimulator.pdb
 C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\obj\Release\ToyRobotSimulator.exe
 C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\obj\Release\ToyRobotSimulator.pdb
+C:\Users\ayush\Desktop\Project\ToyRobot\ToyRobotSimulator\ToyRobotSimulator\obj\Release\ToyRobotSimulator.csprojResolveAssemblyReference.cache

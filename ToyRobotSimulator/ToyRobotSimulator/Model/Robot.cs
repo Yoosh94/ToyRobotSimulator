@@ -18,7 +18,7 @@ namespace ToyRobotSimulator.Model
         public Direction previousDirectionFacing;
         public Robot()
         {
-            //Empty constructor
+            _isRobotPlaced = false;
             
         }
 

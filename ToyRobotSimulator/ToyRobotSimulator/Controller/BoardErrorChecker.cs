@@ -28,5 +28,10 @@ namespace ToyRobotSimulator.Controller
             }
             return isRobotValid;
         }
+
+        public void placeRobotOnBoard(Board board)
+        {
+            board._isRobotPlaced = true;
+        }
     }
 }

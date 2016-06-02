@@ -30,6 +30,7 @@ namespace ToyRobotSimulator.Controller
                 case "REPORT":
                     UserIO.showMessage(robot.ToString());
                     break;
+               
             }
         }
 
@@ -110,5 +111,18 @@ namespace ToyRobotSimulator.Controller
             return robot._isRobotPlaced;
         }
         
+        public void placeRobotOnBoard(Robot robot, string xCoord, string yCoord, string direction)
+        {
+            robot._currentHeightPosition = Convert.ToInt32(yCoord);
+            robot._currentLengthPosition = Convert.ToInt32(xCoord);
+            Robot.Direction di = (Robot.Direction) Enum.Parse(typeof(Robot.Direction), direction);
+            robot.directionFacing = di;
+            robot._isRobotPlaced = true;
+        }
+
+        public void removeRobotFromBoard(Robot robot)
+        {
+            robot._isRobotPlaced = false;
+        }
     }
 }
