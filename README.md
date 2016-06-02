@@ -31,8 +31,8 @@ Any move that would cause the robot to fall must be ignored.
 Above is a description of the challenge.
 To run the solution:
   1. copy the files to your local machine
-  2. Run 'ToyRobotSimulator.sln' using an appropriate IDE (eg Visual Studio).
+  2. Run ToyRobotSimulator/ToyRobotSimulator/bin/Release/ToyRobotSimulator.exe
   3. A console application will be opened asking for Board dimensions. This is up to the user to choose.
   4. Start writing commands (PLACE,MOVE,LEFT,RIGHT)
-  5. Write 'OUTPUT' to get the results.
+  5. Write 'REPORT' to get the results.
   6. Write 'END' to close the application.
