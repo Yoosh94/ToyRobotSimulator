@@ -24,7 +24,7 @@ namespace ToyRobotSimulator
             string userInput = "";
             while(userInput != "End")
             {
-                userInput = Console.ReadLine();
+                userInput = Console.ReadLine().ToUpper();
                 //If the robot has not been placed yet we only expect one kind of command
                 if(!boardChecker.isRobotPresentOnBoard(board) && !rController.isRobotOnABoard(robot))
                 {
