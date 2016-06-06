@@ -8,16 +8,31 @@ namespace TestRobot
     [TestClass]
     public class BoardTest
     {
+        #region check if the Robot has been placed on the board or not
         [TestMethod]
-        public void isRobotPresentOnBoard_equalfalse_duringInit()
+        public void isRobotPresentOnBoard_valid()
         {
+            BoardErrorChecker BEC = new BoardErrorChecker();
             int length = 5;
             int height = 5;
             Robot robot = new Robot();
             Board board = new Board(length, height, robot);
-            Assert.IsFalse(board._isRobotPlaced);
+            BEC.placeRobotOnBoard(board);
+            Assert.IsTrue(BEC.isRobotPresentOnBoard(board));
+            
         }
+        [TestMethod]
+        public void isRobotPresentOnBoard_invalid()
+        {
+            BoardErrorChecker BEC = new BoardErrorChecker();
+            int length = 5;
+            int height = 5;
+            Robot robot = new Robot();
+            Board board = new Board(length, height, robot);
+            Assert.IsFalse(BEC.isRobotPresentOnBoard(board));
 
+        }
+        #endregion
         #region Check if the robot is in a valid location or not
         [TestMethod]
         public void checkValidRobot_onBoard()
@@ -44,5 +59,6 @@ namespace TestRobot
         }
 
         #endregion
+
     }
 }

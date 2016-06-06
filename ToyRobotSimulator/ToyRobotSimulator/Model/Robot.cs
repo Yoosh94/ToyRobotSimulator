@@ -22,8 +22,6 @@ namespace ToyRobotSimulator.Model
             
         }
 
-        
-
         public override string ToString()
         {
             return "OUTPUT: " + _currentLengthPosition + "," + _currentHeightPosition + "," + directionFacing.ToString();
