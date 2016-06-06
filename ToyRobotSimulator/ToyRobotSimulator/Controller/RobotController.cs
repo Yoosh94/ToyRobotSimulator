@@ -7,7 +7,7 @@ using ToyRobotSimulator.Model;
 
 namespace ToyRobotSimulator.Controller
 {
-    class RobotController
+    public class RobotController
     {
         public RobotController()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ToyRobotSimulator.Model
 {
-    class Board
+   public class Board
     {
         public int _height { get; set; }
         public int _length { get; set; }

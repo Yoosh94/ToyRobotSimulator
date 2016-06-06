@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ToyRobotSimulator.Model
 {
-    class Robot
+   public class Robot
     {
         public enum Direction { NORTH,EAST,SOUTH,WEST}
         public bool _isRobotPlaced;
@@ -21,8 +21,6 @@ namespace ToyRobotSimulator.Model
             _isRobotPlaced = false;
             
         }
-
-        
 
         public override string ToString()
         {
