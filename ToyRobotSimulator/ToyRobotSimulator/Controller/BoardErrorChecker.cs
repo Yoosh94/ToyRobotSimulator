@@ -7,7 +7,7 @@ using ToyRobotSimulator.Model;
 
 namespace ToyRobotSimulator.Controller
 {
-    class BoardErrorChecker
+    public class BoardErrorChecker
     {
 
         public BoardErrorChecker()
